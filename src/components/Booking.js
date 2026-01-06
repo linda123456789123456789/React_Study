@@ -1,5 +1,7 @@
 import { useState } from 'react';
 const Booking = (props) => {  
+  // console.log(props.data); 只印出 data 這個單一屬性的值
+  // console.log(props); 印出整個 props 物件，裡面包含父元件傳進來的所有屬性
   const [childData, setChildData] = useState(props.data)
   const change = () =>{
     setChildData('子元件改變的資料')

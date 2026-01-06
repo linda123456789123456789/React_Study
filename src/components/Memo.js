@@ -13,7 +13,8 @@ function Memo() {
       <h2>「單向傳遞」父元件到子元件的資料</h2>
       <h3>實際撰寫</h3>
       <p>父元件： {parentData}</p>
-      <Booking data={parentData} setParentData={setParentData} change={change}/>
+      <Booking data={parentData} setParentData={setParentData} change={change}/> 
+      {/* 子元件={父元件} */}
       <h3>注意</h3>
       <ul>
         <li>單向傳遞原則</li>
