@@ -1,6 +1,7 @@
 import React from 'react'
 import Booking from "./Booking";
 import Booking2 from "./Booking2";
+import Example from './Example';
 
 function Memo() {
   return (
@@ -8,6 +9,7 @@ function Memo() {
       <h1>State</h1>
       <h2>資料初始化與改變資料</h2>
       <h3>實際撰寫</h3>
+      <Example/>
       <Booking/>
       <Booking2/>
       <h3>注意</h3>
