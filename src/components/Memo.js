@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Booking from "./Booking";
+import Booling2 from"./Booking2";
 
 function Memo() {
   const [parentData, setParentData] = useState("父元件創立的資料");
@@ -15,6 +16,7 @@ function Memo() {
       <p>父元件： {parentData}</p>
       <Booking data={parentData} setParentData={setParentData} change={change}/> 
       {/* 子元件={父元件} */}
+      <Booling2 />
       <h3>注意</h3>
       <ul>
         <li>單向傳遞原則</li>
