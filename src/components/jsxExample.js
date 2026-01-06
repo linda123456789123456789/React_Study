@@ -8,7 +8,9 @@ function JsxExample() {
     console.log('秀出來')
   }
   function test2(e){
+    // e可以不寫
     console.log(e)
+    // 如果console.log有指定數字，當click沒有指定時，就會自動顯示console裡面的初始值
   }
   return (
     <div>
