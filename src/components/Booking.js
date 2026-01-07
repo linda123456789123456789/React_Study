@@ -5,13 +5,14 @@ const Booking = () => {
   const handleNum = (type) => {
     if (type === "minus") {
       setNum(num - 1);
-      // console.log("set:", num);
+      console.log("set:", num); // 這行會顯示更新"前"的值
     } else {
       setNum(num + 1);
     }
   };
+  // useEffect(() => { , [] });
   useEffect(() => {
-    console.log("useEffect:", num);
+    console.log("useEffect:", num); // 這行會顯示更新"後"的值
   }, [num]);
   useEffect(() => {
     console.log("first render");
