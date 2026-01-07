@@ -10,7 +10,7 @@ function Form() {
   //   console.log(name);
   // }, [name]);
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // 防止表單的預設行為（頁面重載）
     const data = {
       name,
       email,
@@ -30,12 +30,17 @@ function Form() {
   return (
     <div className="box" style={{ backgroundColor: "#e3c3d1" }}>
       <h2>聯繫我們</h2>
+      {/* 用post方式送出，所以用ionSubmit */}
+      {/* 觸發：點擊表單內的 <button> 或 按下 Enter 鍵 */}
       <form onSubmit={handleSubmit}>
         <label htmlFor="contactName">姓名</label>
         <input
           type="text"
           id="contactName"
           onChange={(e) => setName(e.target.value)}
+          // onChange是input的監聽器，當輸入框內容改變時觸發
+          // e.target.value 取得輸入框的值，並更新到name這個state
+          // 因為我要取input的值，所以用需要用參數e
         />
         <label htmlFor="contactEmail">Email</label>
         <input
