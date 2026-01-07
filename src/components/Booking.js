@@ -12,6 +12,7 @@ const Booking = () => {
       setNum(num + 1);
     }
   };
+  // useEffect不能放在巢狀迴圈、條件式中
   // if (type === "minus") {
   //   setNum(num - 1);
   //   useEffect(() => {
