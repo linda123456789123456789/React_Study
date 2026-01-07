@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 
 function BackStage() {
   const { data } = useFetch("http://localhost:8000/feedback");
-
+  // 等於 const { data: data }，需要重新命名才需要使用'data:新名字'
   const deleteMsg = (id) => {
     fetch(`http://localhost:8000/feedback/${id}`, {
       method: "DELETE",
