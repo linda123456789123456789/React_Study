@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonStyle, PrimaryButtonStyle } from "../ButtonStyle";
+import { ButtonStyle, PrimaryButtonStyle } from "../ButtonStyle"; // 引入 ButtonStyle.js 裡的樣式元件
 function Memo() {
   return (
     <div>

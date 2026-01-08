@@ -33,7 +33,8 @@ const ButtonStyle = styled.button`
         }
       `)}
 `;
-const PrimaryButtonStyle = styled(ButtonStyle)`
+const PrimaryButtonStyle = styled(ButtonStyle)` // extend 用法 -> styled(已存在的樣式元件)
+  // 會繼承 ButtonStyle 的所有樣式，再做修改
   font-weight: bold;
   font-size: 32px;
 `;
