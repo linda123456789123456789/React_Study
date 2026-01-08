@@ -15,6 +15,7 @@ function Memo() {
       <h3>好處</h3>
       <ul>
         <li>不會有覆蓋問題</li>
+        {/* 因為class名稱會被亂數化 */}
         <ComponentA />
         <ComponentB />
         <li>只載入相關樣式</li>
@@ -25,7 +26,7 @@ function Memo() {
   );
 }
 
-const Button = styled.button`
+const Button = styled.button` // styled.標籤名稱
   background: transparent;
   border: 1px solid #369;
   color: #369;
@@ -34,5 +35,6 @@ const Button = styled.button`
     background: #369;
     color: #fff;
   }
+  // & 代表目前這個 styled 元件本身（這裡是 Button）
 `;
 export default Memo;
