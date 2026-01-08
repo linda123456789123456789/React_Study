@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
     `
   )}
   ${theme.spacers.map(
-    (spacer, spacerKey) => css`
+    (spacer, spacerKey) => css` // 為每個值生成一個 CSS 類別
       ${["top", "right", "bottom", "left"].map(
         (dir) => css`
           .m${dir[0]}-${spacerKey}{
