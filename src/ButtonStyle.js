@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
-
+// Memo (父) → 傳 primary 給 ButtonStyle (子)
+// ButtonStyle (子) → 收到 props.primary
+// 內部檢查條件並套用對應樣式
+// 渲染成帶樣式的 <button>
+// 顯示在 Memo 的畫面中
 const ButtonStyle = styled.button`
   background: transparent;
   border: 1px solid #369;
