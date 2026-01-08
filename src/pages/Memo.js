@@ -19,12 +19,14 @@ function Memo() {
         <li>搭配三元運算子判斷條件，再套用樣式</li>
         <p className={condition ? "example" : ""}>example 1</p>
         <p className={`example2 ${condition ? "example" : ""}`}>example 2</p>
+        {/* 需要在字串中插入變數或條件運算時，用反引號``搭配 ${} -> `${}` */}
       </ul>
       <h3>注意</h3>
       <ul>
         <li>CSS 不會只對應到引入的元件</li>
         <ComponentB />
         <ComponentA />
+        {/* 引入到同一個畫面，重名的css會被覆蓋，優先使用被import的 */}
         <li>CSS 載入的順序依照被 import 的順序，不是元件使用的順序</li>
       </ul>
     </div>
