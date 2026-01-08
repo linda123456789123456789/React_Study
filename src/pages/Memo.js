@@ -17,6 +17,7 @@ function Memo() {
       <Button>test1</Button>
       {/* 客製化 variant & extend */}
       <Button variant="secondary">test2</Button>
+      {/* variant 是 react-bootstrap 的 Button 元件提供的內建 prop，用來指定按鈕的樣式風格 */}
       <CustomButton>test2</CustomButton>
       {/* global styles */}
       <a href="https://react-bootstrap.github.io/getting-started/introduction/">
@@ -41,10 +42,10 @@ const CustomButton = styled(Button)`
   font-weight: bold;
   font-size: 32px;
   &:hover {
-    background: #000 !important;
+    background: #000 !important; // react-bootstrap 的按鈕 hover 會有預設樣式，需要用 !important 覆蓋
   }
 `;
 const CustomButton2 = styled(Button)`
   background: ${(props) => props.theme.secondary};
-`;
+`; //可以透過extend更改boostrap按鈕顏色
 export default Memo;
