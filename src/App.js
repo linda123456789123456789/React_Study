@@ -23,6 +23,7 @@ export default function App() {
             <MenuItem />
           </Route>
           <Route path="*">
+            {/* '*'表示除了以上路由之外的所有路由 */}
             <NotFound />
           </Route>
         </Switch>

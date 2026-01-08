@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+// 可以抓到id
 import useFetch from "../hooks/useFetch";
 
 function MenuItem() {
