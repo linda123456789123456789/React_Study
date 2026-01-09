@@ -27,7 +27,7 @@ function Memo() {
       <h1>Material UI</h1>
       <h2>客製化樣式</h2>
       <h3>Theme & Typography</h3>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}> {/* 用 ThemeProvider 包住要套用主題的區域，可以客製化css */}
         <Typography variant="h1" component="h2">
           custom theme
         </Typography>
@@ -37,7 +37,7 @@ function Memo() {
       </Typography>
       <h3>Theme & Spacing</h3>
       <ThemeProvider theme={theme}>
-        <Typography variant="h1" component="h2" mt={2}>
+        <Typography variant="h1" component="h2" mt={2}> {/* mt = margin top 第二個，就是8 */}
           custom theme
         </Typography>
 
