@@ -12,7 +12,7 @@ function Memo() {
   const isEven = useMemo(() => {
     return a % 2 === 0;
   }, [a]);
-
+  // 第一個參數是先去做true or false的計算，第二個參數是當a改變會重新判定isEven
   return (
     <div>
       <h1>useMemo</h1>
