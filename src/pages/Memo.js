@@ -15,6 +15,7 @@ function Memo() {
       <p>npm install @mui/material @emotion/react @emotion/styled</p>
       <h3>Box</h3>
       <Box
+      // 如果要更改屬性，可以用 sx 屬性，也可以更改 component 屬性，像是component="span"
         mt={2}
         sx={{
           width: 300,
@@ -30,7 +31,8 @@ function Memo() {
       </Box>
       <h3>Typography</h3>
       <Typography variant="h1">h1. Heading</Typography>
-      <Typography variant="h1" component="h2">
+      <Typography variant="h1" component="h2"> 
+        {/* component表示我要使用h2標籤，variant表示我要使用h1的樣式，所以就是用h2標籤展現h1樣式 */}
         h1. Heading
       </Typography>
       <h3>Link</h3>
